@@ -1,4 +1,4 @@
-# Cambios personalizados en Bootstrap (CV - Juan Pérez)
+# Cambios personalizados en Bootstrap (CV - José Manuel Sánchez Rosal)
 
 ## 🎨 Variables sobrescritas en `custom.scss`
 
