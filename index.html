@@ -1,110 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - José Manuel Sánchez Rosal</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - José Manuel Sánchez Rosal</title>
+  <link rel="stylesheet" href="scss/miCSS.css">
 </head>
-<body>
+<body class="bg-soft-purple">
 
-    <header>
-        <div class="perfil">
-            <img src="sources/FotoCV.jpg" alt="Foto de José Manuel Sánchez Rosal">
-            <h1>José Manuel Sánchez Rosal</h1>
-            <h2>Técnico en Electricidad, Programación y Energía</h2>
-            <p>Email: <a href="mailto:j.manuel25@outlook.es">j.manuel25@outlook.es</a> | Tel: 649 745 624</p>
-        </div>
-    </header>
+  <div class="container my-5 p-4 rounded bg-white shadow-sm">
+    <div class="d-flex flex-column flex-md-row align-items-start gap-4">
+      <img src="sources/FotoCV.jpg" alt="Foto de José Manuel Sánchez Rosal" class="rounded img-thumbnail" style="width: 150px; height: auto;">
+      <div>
+        <h1 class="fw-bold">José Manuel Sánchez Rosal</h1>
+        <h5 class="mt-3">Sobre mí</h5>
+        <p>
+          Técnico especializado en Electricidad, Automatización Industrial y Mantenimiento, con experiencia en programación de autómatas (PLC), Mantenimiento Eléctrico y Operación de Centrales Termosolares. Durante más de 12 años, he trabajado como Operador de panel y Campo en la PST Palma del Río (I y II), supervisando procesos de generación de energía y gestionando sistemas de control distribuidos (DCS) y SCADA.
+        </p>
+        <p>
+          Cuento con sólidos conocimientos en Instalaciones Eléctricas, Automatización y Mantenimiento de Maquinaria industrial. Actualmente, complemento mi perfil con la formación en Desarrollo de Aplicaciones Multiplataforma (DAM), enfocándome en la integración de tecnología y digitalización en entornos industriales.
+        </p>
+      </div>
+    </div>
 
-    <main>
-        <section id="perfil-profesional">
-            <h3>Sobre mí</h3>
-            <p>Técnico especializado en Electricidad, Automatización Industrial y Mantenimiento, con experiencia en programación de autómatas (PLC), Mantenimiento Eléctrico y Operación de Centrales Termosolares. Durante más de 12 años, he trabajado como Operador de panel y Campo en la PST Palma del Río (I y II), supervisando procesos de generación de energía y gestionando sistemas de control distribuidos (DCS) y SCADA.<br><br>
+    <hr class="my-4">
 
-            Cuento con sólidos conocimientos en Instalaciones Eléctricas, Automatización y Mantenimiento de Maquinaria industrial. Actualmente, complemento mi perfil con la formación en Desarrollo de Aplicaciones Multiplataforma (DAM), enfocándome en la integración de tecnología y digitalización en entornos industriales.</p>
-        </section>
+    <h3 class="fw-semibold mb-4">Competencias</h3>
 
-        <section id="experiencia">
-            <h3>Experiencia Laboral</h3>
-            <article class="trabajo">
-                <h4>Operador en Central Termosolar</h4>
-                <p><strong>Empresa:</strong> Acciona Energía / Contour Global Termosolar Operator</p>
-                <p><strong>Período:</strong> 2011 - 2024</p>
-                <p>Operación y mantenimiento de planta termosolar, control de sistemas DCS y SCADA, supervisión de procesos de generación de energía.</p>
-            </article>
+    <!-- Formación con imagen al lado -->
+    <div class="mb-4 d-flex align-items-center gap-3">
+      <img src="sources/logo estudios.jpeg" alt="Formación" class="rounded-circle" style="width: 150px; height: 120px;">
+      <div>
+        <h5><i class="bi bi-mortarboard-fill me-2"></i>Formación</h5>
+        <ul class="mb-0">
+          <li>CFGM Técnico Electricista en Colegio Salesiano San Luis Rey (2005).</li>
+          <li>CFGS Técnico Superior de Regulación y Control Automáticos en San Luis Rey (2007).</li>
+          <li>CFGS Técnico Desarrollo de Aplicaciones Multiplataforma en IES Antonio Gala (2026).</li>
+        </ul>
+      </div>
+    </div>
 
-            <article class="trabajo">
-                <h4>Técnico Programador y Electricista</h4>
-                <p><strong>Empresa:</strong> Neotest Córdoba S.L.</p>
-                <p><strong>Período:</strong> 2007 - 2009</p>
-                <p>Diseño, instalación y mantenimiento de sistemas automatizados de producción.</p>
-            </article>
-        </section>
+    <!-- Experiencia Laboral con imagen al lado -->
+    <div class="mb-4 d-flex align-items-center gap-3">
+      <img src="sources/logo trabajo.png" alt="Experiencia Laboral" class="rounded-circle" style="width: 150px; height: 150px;">
+      <div>
+        <h5><i class="bi bi-briefcase-fill me-2"></i>Experiencia Laboral</h5>
+        <ul class="mb-0">
+          <li>Operador de Panel y Campo en Central Termosolar Palma del Río I y II (2011–2024)</li>
+          <li>Técnico Programador y electricista en Neotest SL (2007–2009)</li>
+        </ul>
+      </div>
+    </div>
 
-        <section id="educacion">
-            <h3>Formación Académica</h3>
-            <article>
-                <h4>CFGM Técnico Electricista</h4>
-                <p><strong>Centro:</strong> Colegio Salesiano "San Luis Rey"</p>
-                <p><strong>Año:</strong> 2005</p>
-            </article>
-            <article>
-                <h4>CFGS Técnico Superior en Regulación y Control Automáticos</h4>
-                <p><strong>Centro:</strong> Colegio Salesiano "San Luis Rey"</p>
-                <p><strong>Año:</strong> 2007</p>
-            </article>
-            <article>
-                <h4>CFGS Técnico Superior Desarrollo de APlicaciones Multiplataforma</h4>
-                <p><strong>Centro:</strong>I.E.S. Antonio Gala</p>
-                <p><strong>Año:</strong> Actualidad</p>
-            </article>
-        </section>
+    <!-- Actitudes con imagen al lado -->
+    <div class="mb-4 d-flex align-items-center gap-3">
+      <img src="sources/logo actitudes.png" alt="Actitudes" class="rounded-circle" style="width: 150px; height: 150px;">
+      <div>
+        <h5><i class="bi bi-person-fill-gear me-2"></i>Actitudes</h5>
+        <p>Empatía +++ Liderazgo +++ Motivación +++ Organización +++ Trabajo en equipo +++ Resistencia al estrés +++ Polivalencia +++ Creatividad e innovación +++ Resolución de Problemas +++ …</p>
+      </div>
+    </div>
 
-        <section id="aptitudes">
-            <h3>Actitudes</h3>
-                <ul>
-                    <li>Empatía</li>
-                    <li>Liderazgo</li>
-                    <li>Motivación</li>
-                    <li>Proactividad</li>
-                    <li>Organización</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Resistencia al estrés</li>
-                    <li>Polivalencia profesional</li>
-                    <li>Creatividad e Innovación</li>
-                    <li>Resolución de problemas</li>
-                </ul>
-        </section>
-        <section id="habilidades">
-            <h3>Habilidades</h3>
-                <ul>
-                    <li>Lógica de Programación y Scadas</li>
-                    <li>Carnet de Operador de Calderas</li>
-                    <li>Sistema de Control Distribuído (DCS) y FCS</li>
-                    <li>Aplicación de Sistema LOTO en descargos.</li>
-                    <li>Instrucciones Técnicas.</li>
-                    <li>H&S</li>
-                    <li>Análisis y control del agua del ciclo A/V en Termosolares</li>
-                    <li>Operación de Sala de control y de PTA.</li>
-                    <li>Formación ante escenarios de emergencia en Plantas Termossolares</li>
-                    <li>Aplicación de Sistema LOTO en descargos.</li>
-                </ul>
-        </section>
+    <!-- Habilidades con imagen al lado -->
+    <div class="d-flex align-items-center gap-3">
+      <img src="sources/logo habilidades.png" alt="Habilidades" class="rounded-circle" style="width: 150px; height: 150px;">
+      <div>
+        <h5><i class="bi bi-tools me-2"></i>Habilidades</h5>
+        <p>Lógica de Programación y Scadas +++ Sistema de Control Distribuido DCS y FCS +++ Instrucciones Técnicas +++ Análisis y Control de los parámetros del agua del Ciclo Agua/Vapor en Termosolares +++ Carnet de Operador de Calderas +++ Formación en escenarios de Emergencia en Termosolares +++ H&S +++ Operación de Sala de Control de PTA +++ LOTO +++ …</p>
+      </div>
+    </div>
 
-       
-
-        <section id="idiomas">
-            <h3>Idiomas</h3>
-            <p>Español (Nativo), Inglés (Básico)</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 José Manuel Sánchez Rosal</p>
-        <a href="https://www.linkedin.com/in/jos%C3%A9-manuel-s%C3%A1nchez-rosal-863803114?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKz5BkEaVTKKIYedeh1PufQ%3D%3D" target="_blank">Mi perfil de LinkedIn</a>
-        <a href="https://github.com/JoseManuelSanchezRosal" target="_blank">GitHub</a>
-    </footer>
-
+  </div>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
